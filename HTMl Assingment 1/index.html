@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><b>Name and Address</b></legend>
+
+            <!-- radio Buttons -->
+            <label><b>Do you use CiviCRM?</b></label>
+            <input type="radio" id="yes" name="use_civicrm" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="use_civicrm" value="no">
+            <label for="no">No</label>
+            <a href="#">(unselect)</a><br><br>
+
+            <!-- Dropdown -->
+            <label for="civicrm_duration"><b>How long have you been using CiviCRM?</b></label>
+            <select id="civicrm_duration" name="civicrm_duration">
+                <option value="">-- select --</option>
+                <option value="less_than_1">Less than 1 year</option>
+            </select><br><br>
+
+            <!-- Dropdown 2 -->
+            <label for="cms"><b>Which CMS do you use?</b></label>
+            <select id="cms" name="cms">
+                <option value="">-- select --</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+
+            <!-- Dropdown 3 -->
+            <label for="skill_set"><b>Your skill set</b></label> 
+            <select id="skill_set" name="skill_set">
+                <option value="">-- select --</option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select><br><br>
+
+            <!-- Email -->
+            <label for="email"><b>Email</b></label>   
+            <input type="email" id="email" name="email"><br><br>
+
+            <!-- Name -->
+            <label for="firstName"><b>First Name *</b> </label>  
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName"><b>Last Name *</b></label>  
+            <input type="text" id="lastName" name="lastName" required><br>First and Last Name will be shared with others visitor to the site. <br><br>
+
+
+            <!-- Address -->
+            <label for="address"><b>Street Address (Home)</b></label>
+            <input type="text" id="address" name="address"><br><br>
+
+            <label for="city"><b>City (Home)</b></label>
+            <input type="text" id="city" name="city"><br><br>
+
+            <label for="postal_code"><b>Postal Code (Home)</b></label>
+            <input type="text" id="postal_code" name="postal_code"><br><br>
+
+            <label for="country"><b>Country (Home)</b></label>
+            <select id="country" name="country">
+                <option value="Pakistan">Pakistan</option>
+                <option value="other">Other</option>
+            </select><br>Your state/province and country of Residence will be shared with others so folks can find others in their community. <br><br>
+
+            <label for="state"><b>State (Home)</b></label>
+            <select id="state" name="state">
+                <option value="">-- select --</option>
+                <option value="Sindh">Sindh</option>
+                <option value="Punjab">Punjab</option>
+                <option value="KPK">Khyber Pakhtunkhwa</option>
+                <option value="Balochistan">Balochistan</option>
+            </select><br><br>
+
+        </fieldset>
+        <br>
+        <button type="submit">Save</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+
+</html>
