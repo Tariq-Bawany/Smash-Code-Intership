@@ -15,44 +15,41 @@ body {
     height: 100%;
     width: 100%;
     /* background-color: lightblue; */
-    padding: 0 6.5vw;
+    padding: 0 4.5vw;
     font-size: 16px;
 }
 
 #top {
-    height: calc((100% - 300px - 5vmax) / 2);
-
-    width: 100%;
+    height: calc((100% - 352px - 5vmax) / 2);
+    width: calc(100% - 24px);
     background-color: #E8ECEF;
     display: flex;
     align-items: center;
     padding: 4vmax;
 }
-
-#top h1 {
-    font-size: 2em;
+h1{
+    font-size: 40px;
+    /* font-size: 2rem; */
+    font-weight: 500;
 }
-
 #center {
-    width: 100%;
     padding: 2.5vmax 0;
-    display: flex;
-    gap: 1vmax;
-    row-gap: 2vmax;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    width: calc(100% + 24px);
+
 }
 
-#center .center-card {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    width: 18vw;
-    min-width: 240px;
-    height: 300px;
+.center-card {
+    border: 1px solid rgba(0, 0, 0);
+    height: 350px;
+
+    &:first-child {
+        padding-left: -12px !important;
+    }
 }
 
-.center-card .card-top {
-    height: 45%;
+.card-top {
     background-color: #CCCCCC;
+    height: 45%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,29 +60,24 @@ body {
     opacity: .3;
 }
 
-.center-card .card-bottom {
+.card-bottom {
     height: 55%;
     display: flex;
     gap: 10px;
     flex-direction: column;
-    /* justify-content: space-between; */
     padding: 15px 15px;
 }
-.card-bottom>h3{
-font-size: 1.4em;
-}
 #bottom {
-    height: calc((100% - 300px - 5vmax) / 2);
-    width: 100%;
+    height: calc((100% - 352px - 5vmax) / 2);
+    width: calc(100% - 24px);
     background-color: #E8ECEF;
     display: flex;
     align-items: center;
     padding: 4vmax;
 }
 
-#bottom h1 {
-    font-size: 2em;
-}
+
+
 @media (min-width:768px) and (max-width:1023px) {
     #main{
         font-size: 15px;
@@ -93,6 +85,15 @@ font-size: 1.4em;
     #top{
         height: 120px;
     }
+    h1{
+        font-size: 2rem;
+    }
+    .center-card {
+        height:300px ;
+    }
+.card-bottom {
+    padding: 10px 10px;
+}
     #bottom{
         height: 120px;
     }
@@ -104,16 +105,18 @@ font-size: 1.4em;
     }
 
     #top {
-        height: 80px;
-        justify-content: center;
+        height: 90px;
     }
-
-    #center {
-        justify-content: center;
+    h1{
+        font-size: 2rem;
     }
-    
+    .center-card {
+        height:230px ;
+    }
+    .card-bottom {
+        padding: 5px 5px;
+    }
     #bottom {
-        height: 80px;
-        justify-content: center;
+        height: 90px;
     }
 }
