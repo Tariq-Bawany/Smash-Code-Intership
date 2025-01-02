@@ -141,14 +141,15 @@ main #bg-image-new-year img{
     }
 }
 .item img{
-    width: 9vw;
-    /* width: 150px; */
+    width: 9vmax;
+    min-width:  120px;
     object-fit: cover;
     object-position: center;
     height: 110px;
 }
 .full-size-img{
-    width: 18vw !important;
+    width: 18vmax !important;
+    min-width: 250px;
      height: 300px !important;
      object-fit: cover;
      object-position: center;
