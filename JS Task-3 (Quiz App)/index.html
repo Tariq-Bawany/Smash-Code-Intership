@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="copyright">
+        <h2>Developed by Muhammad Tariq</h2>
+    </div>
+    <div class="container">
+        <h1>Quiz App JS</h1>
+        <div class="main">
+
+            <div class="box">
+                <input type="text" required>
+                <label for="">Your Name</label>
+                <div class="underline"></div>
+                <div class="valid">Name should be greater than 3!</div>
+                <button id="start-btn">Start Quiz</button>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <h3 class="std-name"></h3>
+        <div class="question-info">
+            <div class="qs-no">
+                <h3>Question 1 Out of 6</h3>
+            </div>
+            <div class="qs-time-counter">
+                <div id="minutes">1m</div> : 
+                <div id="seconds">60s</div>
+            </div>
+        </div>
+        <div class="question-details">
+        </div>
+        <button id="next-btn" >Next</button>
+    </div>
+    <div class="result-sheet">
+        <h1>Thank You!</h1>
+        <div class="result">
+            <h3 id="remarks">Congratulations! You Passed</h3>
+            <table border="1px">
+                <tr>
+                    <td>Total Questions </td>
+                    <td id="tq-no">6</td>
+                </tr>
+                <tr>
+                    <td>Correct</td>
+                    <td id="cq-no">6</td>
+                </tr>
+                <tr>
+                    <td>Wrong</td>
+                    <td id="wq-no">6</td>
+                </tr>
+                <tr>
+                    <td>Percentage</td>
+                    <td id="perc">100%</td>
+                </tr>
+            </table>
+            <div>
+                <button id="try-again" onclick="reset()">Try Again</button>
+                <button id="go-to-home" onclick="goToHome()">Go to Home</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
