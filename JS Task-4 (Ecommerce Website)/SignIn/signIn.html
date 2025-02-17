@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="signIn.css">
+</head>
+
+<body>
+    <div id="main">
+        <div class="top">
+            <header>
+                <img src="/images/Amazon-Logo-Black-Orange.png" alt="Amazon-Logo">
+            </header>
+            <main>
+                <h2>Sign in</h2>
+                <div class="signIn-container">
+                   
+                    <!-- Email or Mobile Number -->
+                    <div class="signIn">
+                        <label for="signIn-email-mobile">Email</label><br>
+                        <div class="input-wrapper">
+                            <input type="text" name="signIn-email-mobile" id="signIn-email-mobile"><br>
+                            <div class="signIn-input-border"></div>
+                        </div>
+                        <div class="customer-name-alert" id="email-alert"><i class="ri-error-warning-line"></i> Enter Your email</div>
+                    </div>
+                    <!-- Password -->
+                    <div class="signIn">
+                        <label for="signIn-password">Password</label><br>
+                        <div class="input-wrapper">
+                            <input type="password" name="signIn-password" id="signIn-password"><br>
+                            <div class="signIn-input-border"></div>
+                        </div>
+                        <div class="customer-name-alert" id="password-alert"><i class="ri-error-warning-line"></i> Enter Your Password</div>
+                        <div class="customer-name-alert" id="invalid-credentials"><i class="ri-error-warning-line"></i> Invalid Credentials</div>
+                    </div>
+                   
+                    <button id="signIn-continue-button">Continue</button>
+                    <div class="signIn-disclaimer">By creating an account, you agree to Amazon's <span>Conditions of
+                            Use</span> and <span>Privacy Notice.</span></div>
+                    <p class="need-help"><i class="fa-solid fa-chevron-down"></i><span>Need Help</span></p>
+    
+                </div>
+                <div class="buying">
+                    <h4>Buying for work?</h4>
+                    <a href="">Shop on Amazon Business</a>
+                </div>
+                <div class="modal"></div>
+            </main>
+            <footer>
+                <div class="footer-text">
+                    <p>New to Amazon?</p>
+                    <a href="/SignUp/signup.html">
+                        <button>Create Your Amazon account</button>
+                    </a>
+                </div>
+            </footer>
+
+        </div>
+        <div class="bottom">
+            <div class="bottom-links">
+                <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088">Conditions of Use</a>
+                <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496">Privacy Notice</a>
+                <a href="https://www.amazon.com/help">Help</a>
+            </div>
+            <div class="bottom-cpoyright-disclaimer">
+                <p>&copy; 1996-2025, Amazon.com, Inc. or its affiliates</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="signIn.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+@font-face {
+    font-family: Amazon-font;
+    src: url(/images/CircularXXWeb-Book.woff2);
+}
+
+@font-face {
+    font-family: Amazon-Ember;
+    src: url(/images/AmazonEmber_W_Bd.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#main {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+}
+
+#main header {
+    display: flex;
+    justify-content: center;
+}
+
+/* *************** Logo *************** */
+#main header img {
+    height: 32px;
+}
+
+/* *************** Main Start *************** */
+#main main {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid silver;
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+/* Creat Account Heading */
+#main main h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.sign-up-container{
+    border-bottom: 1px solid silver;
+}
+.sign-up-container .signUp{
+    margin-bottom: 20px;
+}
+.sign-up-container .signUp label {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+/* input wrapper for border outline */
+.input-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.sign-up-container .signUp .input-wrapper input {
+    padding: 7px;
+    min-width: 250px;
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    height: 100%;
+    border: 1px solid silver;
+}
+
+/* border outside input */
+.signUp-input-border {
+    display: none;
+    pointer-events: none;
+    /* height: 35px; */
+    height: 100%;
+    min-width: 250px;
+    width: 300px;
+    top: 0;
+    left: 0;
+    border: 3px solid rgb(18, 126, 153);
+    transition: all ease .6s;
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 10;
+    border-radius: 5px;
+
+}
+
+@keyframes input-border-animations {
+    from {
+        transform:  scale(1);
+    }
+
+    to {
+        transform:  scaleY(1.4) scaleX(1.04);
+    }
+}
+
+.signUp:focus-within .signUp-input-border {
+    animation: input-border-animations ease .4s forwards;
+    display: block;
+}
+
+.sign-up-container .signUp .customer-alert {
+    display: none;
+    margin-top: 5px;
+    /* transform: scale(.8); */
+    color: red;
+    width: 100%;
+    font-size: .8rem;
+    /* display: flex; */
+    align-items: center;
+    gap: 3px;
+}
+
+.sign-up-container .signUp .customer-alert i {
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+.signUp-password-details{
+    margin-top: 5px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+.signUp-password-details i{
+    color: #007185;
+    font-size: 1.5rem;
+}
+/* continue button */
+.sign-up-container>button{
+    width: 100%;
+    padding: 7px 0;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #FFD814;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: #F7CA00;
+    }
+}
+
+/* disclaimer */
+.sign-up-container .signUp-disclaimer{
+    margin: 20px 0;
+    min-width: 250px;
+    width: 300px;
+    font-size: .75rem;
+}
+.sign-up-container .signUp-disclaimer span{
+    color: #007185;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+        color: #C7511F;
+    }
+}
+#main main .buying{
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid silver;
+}
+#main main .buying h4{
+    padding-bottom: 3px;
+    font-size: .9rem;
+}
+#main main .buying a {
+    font-size: .8rem;
+    text-decoration: none;
+    color: #007185;
+    cursor: pointer;
+    &:hover {
+        color: #C7511F;
+        text-decoration: underline;
+    }
+}
+
+.signIn-navigation span{
+    font-size: .9rem;
+}
+.signIn-navigation span a{
+    color: #007185;
+    cursor: pointer;
+    text-decoration: none;
+    &:hover {
+        color: #C7511F;
+        text-decoration: underline;
+    }
+}
+.signIn-navigation span i{
+    font-size: 1rem;
+}

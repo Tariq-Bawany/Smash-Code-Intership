@@ -1,0 +1,296 @@
+@font-face {
+    font-family: Amazon-font;
+    src: url(/images/CircularXXWeb-Book.woff2);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#main {
+    font-family: Amazon-font,Arial, Helvetica, sans-serif;
+    height: 100%;
+    width: 100%;
+    padding: 15px;
+    overflow-x: hidden;
+}
+.top{
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 2px solid silver;
+}
+/* '''''''''''''''''''''''''''' TOP START '''''''''''''''''''''''''''' */
+#main .top header {
+    display: flex;
+    justify-content: center;
+}
+
+/*Logo */
+#main .top header img {
+    height: 32px;
+}
+
+/* ******** Main Start ******** */
+#main .top main {
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid silver;
+    width: fit-content;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+/* Sign In Heading */
+#main .top main h2 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.signIn-container{
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+}
+.signIn-container .signIn{
+    margin-bottom: 20px;
+}
+.signIn-container .signIn label {
+    font-weight: 600;
+    font-size: .9rem;
+}
+
+/* input wrapper for border outline */
+.input-wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.signIn-container .signIn .input-wrapper input {
+    padding: 7px;
+    min-width: 250px;
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+    background-color: transparent;
+    height: 100%;
+    border: 1px solid silver;
+}
+
+/* border outside input */
+.signIn-input-border {
+    display: none;
+    pointer-events: none;
+    /* height: 35px; */
+    height: 100%;
+    min-width: 250px;
+    width: 300px;
+    top: 0;
+    left: 0;
+    border: 3px solid rgb(18, 126, 153);
+    transition: all ease .6s;
+    /* background-color: blue; */
+    position: absolute;
+    z-index: 10;
+    border-radius: 5px;
+
+}
+
+@keyframes input-border-animations {
+    from {
+        transform:  scale(1);
+    }
+
+    to {
+        transform:  scaleY(1.4) scaleX(1.04);
+    }
+}
+
+.signIn:focus-within .signIn-input-border {
+    animation: input-border-animations ease .4s forwards;
+    display: block;
+}
+
+.signIn-container .signIn .customer-name-alert {
+    display: none;
+    margin-top: 5px;
+    /* transform: scale(.8); */
+    color: red;
+    width: 100%;
+    font-size: .8rem;
+    /* display: flex; */
+    align-items: center;
+    gap: 3px;
+}
+
+.signIn-container .signIn .customer-name-alert i {
+    font-weight: 600;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    /* background-color: red; */
+}
+.signIn-password-details{
+    margin-top: 5px;
+    font-size: .8rem;
+    display: flex;
+    align-items: center;
+}
+.signIn-password-details i{
+    color: #007185;
+    font-size: 1.5rem;
+}
+/* continue button */
+.signIn-container>button{
+    width: 100%;
+    padding: 7px 0;
+    font-weight: 600;
+    border-radius: 20px;
+    background-color: #FFD814;
+    border: none;
+    cursor: pointer;
+    &:hover{
+        background-color: #F7CA00;
+    }
+}
+
+/* disclaimer */
+.signIn-container .signIn-disclaimer{
+    margin: 20px 0;
+    min-width: 250px;
+    width: 300px;
+    font-size: .75rem;
+}
+.signIn-container .signIn-disclaimer span{
+    color: #007185;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover {
+        color: #C7511F;
+    }
+}
+
+
+#main main p.need-help i {
+    margin-right: 5px;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+#main main p.need-help span {
+    font-size: .9rem;
+    color: #007185;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+        color: #C7511F;
+    }
+}
+#main main .buying{
+    margin: 15px 0;
+}
+#main main .buying h4{
+    padding-bottom: 5px;
+    font-size: .9rem;
+}
+#main main .buying a {
+    font-size: .9rem;
+    text-decoration: none;
+    color: #007185;
+    cursor: pointer;
+    &:hover {
+        color: #C7511F;
+        text-decoration: underline;
+    }
+}
+main .modal{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px ;
+    background-color: rgba(255, 255, 255, 0.301);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px black;
+    z-index: 10000;
+    transition: all ease .9s;
+}
+/* ******** Main End ******** */
+
+.top footer{
+    margin: 10px auto;
+    text-align: center;
+    width: 350px;
+    /* border: 1px solid silver; */
+}
+footer .footer-text p{
+    position: relative;
+    font-size: .8rem;
+    color: #525252;
+    &::before{
+        content: "";
+        height: 1px ;
+        width: 110px;
+        background-color: silver;
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    &::after{
+        content: "";
+        height: 1px ;
+        width: 110px;
+        background-color: silver;
+        position: absolute;
+        top: 50%;
+        right: 0;
+    }
+}
+footer .footer-text button{
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px 0;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #525252;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover{
+        background-color: #eeeeee;
+    }
+}
+
+.bottom{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.bottom .bottom-links{
+    display: flex;
+    justify-content: center;
+    font-size: .8rem;
+    gap: 20px;
+    
+    
+}
+.bottom .bottom-links a{
+    color: #007185;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+        color: #C7511F;
+    }
+}
+.bottom .bottom-cpoyright-disclaimer p{
+    margin-top: 10px;
+    color: #525252;
+    font-size: .8rem;
+}

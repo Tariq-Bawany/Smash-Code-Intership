@@ -1,0 +1,140 @@
+@media (max-width:1200px) {
+    #amazon-cart{
+        padding-top: 230px;
+
+        grid-template-columns: repeat(3,1fr);
+    }
+    .full-width{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    .d-small-block{
+        display: block ;
+    }
+    .d-small-none{
+        display: none;
+    }
+    
+
+}
+@media (max-width:992px) {
+    #nav-bar{
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .nav-left,.nav-toolbar2{
+        gap: 4.2vw;
+    }
+    
+    .nav-toolbar2{
+        display: flex;
+    }
+    .nav-toolbar{
+        display: none;
+    }
+    
+
+}
+@media (max-width:900px) {
+    #amazon-cart{
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 150px; 
+    }
+    .full-width{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .d-small-block{
+        display: none ;
+    }
+    .d-small-none{
+        display: block;
+    }
+}
+@media (max-width:768px) {
+    #nav-bar{
+     justify-content: flex-start;   
+     gap: 20px;
+     flex-wrap: nowrap;
+    }
+    .nav-left{
+        gap: 10px;
+    }
+    .nav-toolbar2{
+        display: none;
+    }
+    .nav-search {
+        width: 65%;
+    }
+    .nav-search input{
+        min-width: 100px;
+    }
+    .nav-links-categories:not(:first-child){
+        display: none;
+    }
+}
+@media (max-width:576px) {
+    main{
+        padding: 0 10px;
+    }
+    main #bg-image-new-year img {
+        transform: scale(1.1);
+    }
+    #nav-bar{
+        flex-wrap: wrap;
+        gap: 0;
+        font-size: .7rem;
+        justify-content: space-between;
+        padding: 10px;
+        height: fit-content;
+        row-gap: 5px;
+    }
+    #nav-bar>i{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-logo img {
+        width: 65%;
+    }
+    .nav-search{
+        width: 100%;
+    }
+    #nav-links{
+        display: none;
+    }
+    .category-container {
+        margin-bottom: 20px;
+    }
+    #footer-nav{
+        justify-content: center;
+    }
+    #footer-logo{
+        display: none;
+    }
+}
+@media (max-width:450px) {
+    #amazon-cart{
+        padding-top: 100px; 
+
+        /* grid-template-columns: 1fr; */
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr ; */
+    }
+    .see-more{
+        position: static;
+    }
+    
+    .category-card{
+        overflow-y: hidden;
+    }
+    
+    .d-small-block{
+        display: none ;
+    }
+    .d-small-none{
+        display: block;
+    }
+}

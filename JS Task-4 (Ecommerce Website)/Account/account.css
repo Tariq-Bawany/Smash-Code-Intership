@@ -1,0 +1,101 @@
+@import url(/style.css);
+@import url(/media.css);
+@font-face {
+    font-family: Amazon-Ember;
+    src: url(/images/AmazonEmber_W_Bd.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Amazon-Ember; */
+}
+main{
+    /* text-align: center; */
+    padding: 20px  270px;
+}
+main .main-container h1{
+    /* border: 1px solid black; */
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.dashboard-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.dashboard-container .card{
+    display: flex;
+    align-items: start;
+    /* height: 100px; */
+    border: 1px solid silver;
+    border-radius: 5px ;
+    padding: 15px 20px;
+    gap: 10px;
+    cursor: pointer;
+    transition: all ease .5s;
+    &:hover{
+        background-color: rgb(211, 210, 210);
+    }
+}
+.card-img {
+    pointer-events: none;
+    height: 100%;
+}
+.card-img img{
+    height: 70px;
+}
+.card-text {
+    pointer-events: none;
+    padding-top: 7px;
+    white-space: wrap;
+    
+}
+.card-text h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.card-text p{
+    margin-top: 10px;
+    font-size: .9rem;
+    color: #616161;
+    font-weight: 500;
+}
+.modal-container{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    /* height: 60px; */
+    padding: 20px;
+    font-weight: 600;
+    letter-spacing: 1.2;
+    box-shadow: 0 0 5px red;
+    background-color: beige;
+    position: absolute;
+    z-index: 10;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%,0);
+    animation: modal-animations ease 1.2s forwards;
+    /* animation-delay: .3s; */
+}
+.modal-container span b{
+    color: red;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+@keyframes modal-animations {
+    to{
+        top: 10%;
+    }
+}

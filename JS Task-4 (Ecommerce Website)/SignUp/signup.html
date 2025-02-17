@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Signup</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="signup.css">
+</head>
+
+<body>
+    <div id="main">
+        <header>
+            <img src="/images/Amazon-Logo-Black-Orange.png" alt="Amazon-Logo">
+        </header>
+        <main>
+            <h2>Create Account</h2>
+            <div class="sign-up-container">
+                <!-- Name -->
+                <div class="signUp">
+                    <label for="signUp-name">Your name</label><br>
+                    <div class="input-wrapper">
+                        <input type="text" name="signUp-name" id="signUp-name" placeholder="First and Last name"><br>
+                        <div class="signUp-input-border"></div>
+                    </div>
+                    <div class="customer-alert" id="name-alert"><i class="ri-error-warning-line"></i> Enter Your Name</div>
+                </div>
+                <!-- Email or Mobile Number -->
+                <div class="signUp">
+                    <label for="signUp-email-mobile">Email</label><br>
+                    <div class="input-wrapper">
+                        <input type="email" name="signUp-email-mobile" id="signUp-email-mobile"><br>
+                        <div class="signUp-input-border"></div>
+                    </div>
+                    <div class="customer-alert" id="email-alert"><i class="ri-error-warning-line"></i> Enter Your email</div>
+                </div>
+                <!-- Password -->
+                <div class="signUp">
+                    <label for="signUp-password">Password</label><br>
+                    <div class="input-wrapper">
+                        <input type="password" name="signUp-password" id="signUp-password" placeholder="At least 6 characters"><br>
+                        <div class="signUp-input-border"></div>
+                    </div>
+                    <div class="customer-alert" id="password-alert"><i class="ri-error-warning-line"></i>Minimum 6 characters required</div>
+                    <div class="signUp-password-details"><i class="ri-error-warning-line"></i>Password must be atleast 6 characters</div>
+                </div>
+                <!-- Confirm Password -->
+                <div class="signUp">
+                    <label for="signUp-confirm-password">Re-enter password</label><br>
+                    <div class="input-wrapper">
+                        <input type="password" name="signUp-confirm-password" id="signUp-confirm-password"><br>
+                        <div class="signUp-input-border"></div>
+                    </div>
+                    <div class="customer-alert" id="confirm-password-alert"><i class="ri-error-warning-line"></i>type your password again</div>
+                </div>
+                <button id="signUp-continue-button">Continue</button>
+                <div class="signUp-disclaimer">By creating an account, you agree to Amazon's <span>Conditions of Use</span> and <span>Privacy Notice.</span></div>
+            </div>
+            <div class="buying">
+                <h4>Buying for work?</h4>
+                <a href="">Create a free business account</a>
+            </div>
+            <div class="signIn-navigation">
+                <span>Already have an account? <a href="/SignIn/signIn.html">Sign in<i class="ri-arrow-right-s-line"></i></a></span>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="signup.js"></script>
+</body>
+
+</html>
