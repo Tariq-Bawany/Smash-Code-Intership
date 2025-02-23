@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+
+</head>
+
+<body>
+  <!-- ************************* Header ************************* -->
+  <header>
+    <div id="nav-bar">
+      <div class="nav-left">
+
+        <div class="nav-logo">
+          <a href="/index.html">
+            <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo">
+          </a>
+        </div>
+        <div class="nav-global-link">
+          <i class="fa-solid fa-location-dot"></i>
+          <div id="nav-global-countries">
+            Deliver to <br><b>Pakistan</b>
+          </div>
+        </div>
+      </div>
+      <div class="nav-toolbar2">
+        <div class="nav-tools-lang ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24"
+            id="Um-United-States-Minor-Outlying-Islands--Streamline-Flagpack" height="20" width="20">
+            <desc>UM United States Minor Outlying Islands Streamline Icon: https://streamlinehq.com</desc>
+            <path fill="#f7fcff" fill-rule="evenodd" d="M0 2.875h23v17.25H0V2.875Z" clip-rule="evenodd"
+              stroke-width="1"></path>
+            <path fill="#e31d1c" fill-rule="evenodd"
+              d="M0 13.4161875v1.4375h23v-1.4375H0Zm0 2.636375v1.4375h23v-1.4375H0Zm0 -7.90625v1.4375h23v-1.4375H0ZM0 18.6875v1.4375h23v-1.4375H0Zm0 -7.90625v1.4375h23v-1.4375H0ZM0 2.875v1.4375h23V2.875H0Zm0 2.63565625v1.4375h23v-1.4375H0Z"
+              clip-rule="evenodd" stroke-width="1"></path>
+            <path fill="#2e42a5" d="M0 2.875h14.375v9.34375H0z" stroke-width="1"></path>
+            <path fill="#f7fcff" fill-rule="evenodd"
+              d="m1.2376875 4.98740625 -0.5218125 0.36584375 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.875 0 -0.5218125 0.36584375 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.36584375 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625ZM0.715875 8.22896875l0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875H0.428375l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625ZM0.715875 11.10396875l0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875H0.428375l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 -5.3834375 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm0.5218125 2.5084375000000003 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-0.5218125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875ZM2.6751875 6.4241875l-0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-6.2718125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.20340624999999998 0.531875h-0.6051875l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -3.2415624999999997 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-0.5218125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.20340624999999998 0.531875h-0.6051875l0.46359375 0.41184374999999995 -0.17609375 0.6511875Z"
+              clip-rule="evenodd" stroke-width="1"></path>
+          </svg>
+          EN <i class="fa-solid fa-caret-down "></i>
+
+        </div>
+
+        <div class="nav-tools-sign-in">
+          <p>Hello,sign in <br><strong>Account & Lists</strong></p>
+          <i class="fa-solid fa-caret-down "></i>
+        </div>
+
+        <div class="nav-tools-returns-order">
+          <p>Returns <br> <strong>& Orders</strong></p>
+        </div>
+
+        <div class="nav-tools-cart">
+          <span class="nav-tools-cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="#fff"
+              id="Trolley--Streamline-Phosphor" height="25" width="25">
+              <desc>Trolley Streamline Icon: https://streamlinehq.com</desc>
+              <path
+                d="M4.71226171875 12.822451171875c0 0.780404296875 -0.844810546875 1.26815625 -1.52066015625 0.87795703125 -0.6758496093749999 -0.39020507812500005 -0.6758496093749999 -1.3657089843749999 0 -1.7559082031250002 0.15412499999999998 -0.088986328125 0.328916015625 -0.13583203125 0.506888671875 -0.1358203125 0.5598749999999999 0.0000234375 1.013771484375 0.453896484375 1.013771484375 1.013771484375Zm8.110189453125 -1.013771484375c-0.780404296875 -0.00003515625 -1.26814453125 0.844751953125 -0.8779746093749999 1.5206191406249998 0.390169921875 0.6758671875000001 1.365673828125 0.6759140625000001 1.7559082031250002 0.00008203125 0.0889921875 -0.15412499999999998 0.13584375 -0.32895703125000003 0.13584375 -0.5069296875 0 -0.5598749999999999 -0.45390234375 -1.013748046875 -1.01377734375 -1.013771484375Zm1.52066015625 -2.027548828125H2.68471875V3.401326171875c0.00085546875 -0.269015625 -0.10618359375 -0.52714453125 -0.2971640625 -0.716607421875L1.01579296875 1.3123183593749999c-0.27607031249999997 -0.276064453125 -0.747462890625 -0.14975390625 -0.8485136718749999 0.227361328125 -0.046892578125 0.17501953125 0.003146484375 0.361763671875 0.131267578125 0.489884765625l1.37239453125 1.37176171875v6.3798046875h-0.506888671875c-0.39019921874999997 0.000017578125 -0.634078125 0.4224375 -0.4389609375 0.760353515625 0.09054492187499999 0.15680859375 0.257888671875 0.253412109375 0.4389609375 0.253423828125h13.17905859375c0.39020507812500005 -0.000017578125 0.634083984375 -0.4224375 0.438966796875 -0.760353515625 -0.09054492187499999 -0.156814453125 -0.257888671875 -0.253412109375 -0.438966796875 -0.253423828125Z"
+                stroke-width="10"></path>
+            </svg>
+            <div class="cart-counter">0</div>
+
+          </span>
+          <strong>Cart</strong>
+        </div>
+      </div>
+      <i class="fa-solid fa-bars"></i>
+      <div class="nav-search ">
+        <div class="nav-search-btn">
+          All <i class="fa-solid fa-caret-down"></i>
+        </div>
+        <input type="search" placeholder="Seach Amazon">
+        <div class="nav-search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+      </div>
+
+      <div class="nav-toolbar">
+        <div class="nav-tools-lang ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24"
+            id="Um-United-States-Minor-Outlying-Islands--Streamline-Flagpack" height="20" width="20">
+            <desc>UM United States Minor Outlying Islands Streamline Icon: https://streamlinehq.com</desc>
+            <path fill="#f7fcff" fill-rule="evenodd" d="M0 2.875h23v17.25H0V2.875Z" clip-rule="evenodd"
+              stroke-width="1"></path>
+            <path fill="#e31d1c" fill-rule="evenodd"
+              d="M0 13.4161875v1.4375h23v-1.4375H0Zm0 2.636375v1.4375h23v-1.4375H0Zm0 -7.90625v1.4375h23v-1.4375H0ZM0 18.6875v1.4375h23v-1.4375H0Zm0 -7.90625v1.4375h23v-1.4375H0ZM0 2.875v1.4375h23V2.875H0Zm0 2.63565625v1.4375h23v-1.4375H0Z"
+              clip-rule="evenodd" stroke-width="1"></path>
+            <path fill="#2e42a5" d="M0 2.875h14.375v9.34375H0z" stroke-width="1"></path>
+            <path fill="#f7fcff" fill-rule="evenodd"
+              d="m1.2376875 4.98740625 -0.5218125 0.36584375 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.875 0 -0.5218125 0.36584375 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.36584375 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625ZM0.715875 8.22896875l0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875H0.428375l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625ZM0.715875 11.10396875l0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875H0.428375l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 -5.3834375 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm0.5218125 2.5084375000000003 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-0.5218125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875ZM2.6751875 6.4241875l-0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-6.2718125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.20340624999999998 0.531875h-0.6051875l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -3.2415624999999997 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-0.5218125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.20340624999999998 0.531875h-0.6051875l0.46359375 0.41184374999999995 -0.17609375 0.6511875Z"
+              clip-rule="evenodd" stroke-width="1"></path>
+          </svg>
+          EN <i class="fa-solid fa-caret-down "></i>
+
+        </div>
+
+        <div class="nav-tools-sign-in">
+          <p>Hello,sign in <br><strong>Account & Lists</strong></p>
+          <i class="fa-solid fa-caret-down "></i>
+
+          <div class="nav-tools-sign-in-hover">
+            <div class="nav-sign-in-navigations">
+              <a href="/SignIn/signIn.html"><button>Sign in</button></a><br>
+              <span>New Customer? <a href="/SignUp/signup.html">Start here</a></span>
+            </div>
+            <div class="sign-in-hover-bottom">
+              <div class="sign-in-your-lists">
+                <h3>Your Lists</h3>
+                <ul>
+                  <li><a href="">Create a List</a></li>
+                  <li><a href="">Find a List or Registry</a></li>
+                  <li><a href="">Your Saved Books</a></li>
+                </ul>
+              </div>
+              <div class="sign-in-your-account">
+                <h3>Your Account</h3>
+                <ul>
+                  <li><a href="/Account/account.html">Account</a></li>
+                  <li><a href="">Orders</a></li>
+                  <li><a href="">Recommendations</a></li>
+                  <li><a href="">Browsing History</a></li>
+                  <li><a href="">Watchlists</a></li>
+                  <li><a href="">Sign Out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="nav-tools-returns-order">
+          <p>Returns <br> <strong>& Orders</strong></p>
+        </div>
+
+        <div class="nav-tools-cart">
+          <span class="nav-tools-cart-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-0.5 -0.5 16 16" fill="#fff"
+              id="Trolley--Streamline-Phosphor" height="25" width="25">
+              <desc>Trolley Streamline Icon: https://streamlinehq.com</desc>
+              <path
+                d="M4.71226171875 12.822451171875c0 0.780404296875 -0.844810546875 1.26815625 -1.52066015625 0.87795703125 -0.6758496093749999 -0.39020507812500005 -0.6758496093749999 -1.3657089843749999 0 -1.7559082031250002 0.15412499999999998 -0.088986328125 0.328916015625 -0.13583203125 0.506888671875 -0.1358203125 0.5598749999999999 0.0000234375 1.013771484375 0.453896484375 1.013771484375 1.013771484375Zm8.110189453125 -1.013771484375c-0.780404296875 -0.00003515625 -1.26814453125 0.844751953125 -0.8779746093749999 1.5206191406249998 0.390169921875 0.6758671875000001 1.365673828125 0.6759140625000001 1.7559082031250002 0.00008203125 0.0889921875 -0.15412499999999998 0.13584375 -0.32895703125000003 0.13584375 -0.5069296875 0 -0.5598749999999999 -0.45390234375 -1.013748046875 -1.01377734375 -1.013771484375Zm1.52066015625 -2.027548828125H2.68471875V3.401326171875c0.00085546875 -0.269015625 -0.10618359375 -0.52714453125 -0.2971640625 -0.716607421875L1.01579296875 1.3123183593749999c-0.27607031249999997 -0.276064453125 -0.747462890625 -0.14975390625 -0.8485136718749999 0.227361328125 -0.046892578125 0.17501953125 0.003146484375 0.361763671875 0.131267578125 0.489884765625l1.37239453125 1.37176171875v6.3798046875h-0.506888671875c-0.39019921874999997 0.000017578125 -0.634078125 0.4224375 -0.4389609375 0.760353515625 0.09054492187499999 0.15680859375 0.257888671875 0.253412109375 0.4389609375 0.253423828125h13.17905859375c0.39020507812500005 -0.000017578125 0.634083984375 -0.4224375 0.438966796875 -0.760353515625 -0.09054492187499999 -0.156814453125 -0.257888671875 -0.253412109375 -0.438966796875 -0.253423828125Z"
+                stroke-width="10"></path>
+            </svg>
+            <div class="cart-counter">0</div>
+
+          </span>
+          <strong>Cart</strong>
+        </div>
+      </div>
+    </div>
+
+    <div id="nav-links">
+      <div class="nav-links-categories">
+        <i class="fa-solid fa-bars"></i> <b>All</b>
+      </div>
+      <div class="nav-links-categories">Today's Deals</div>
+      <div class="nav-links-categories">Customer Service</div>
+      <div class="nav-links-categories">Registry</div>
+      <div class="nav-links-categories">Gift Cards</div>
+      <div class="nav-links-categories">Sell</div>
+    </div>
+  </header>
+
+
+  <!-- ************************* Main ************************* -->
+  <main>
+    <div id="bg-image-new-year" class=justify-content-center ">
+      <img src=" https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg"
+      alt="a-section a-spacing-none _cropped-image-link_style_fluidImageContainer__2jd50">
+      <div class="img-new-year-btns position-absolute justify-content-between   fs-1 ">
+        <i class="fa-solid fa-chevron-left"></i>
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+    <!-- ************************* Amazon Cart ************************* -->
+    <div id="amazon-cart">
+      <!-- Get your game on -->
+      <div class="category-card">
+        <h2>Get your game on</h2>
+        <div class="category-container full-size">
+          <div class="item">
+            <img class="full-size-img"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Stores-Gaming/FinalGraphics/Fuji_Gaming_store_Dashboard_card_1x_EN._SY304_CB564799420_.jpg"
+              alt="Shop Gaming">
+          </div>
+        </div>
+        <a href="" class="see-more ">Shop Gaming</a>
+      </div>
+      <!-- Gaming accessories -->
+      <div class="category-card">
+        <h2>Gaming accessories</h2>
+        <div class="category-container">
+          <div class="item">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Headset_1x._SY116_CB667159060_.jpg"
+              alt="Headsets">
+            <p>Headsets</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Keyboard_1x._SY116_CB667159063_.jpg"
+              alt="Keyboards">
+            <p>Keyboards</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Mouse_1x._SY116_CB667159063_.jpg"
+              alt="Computer mice">
+            <p>Computer mice</p>
+          </div>
+          <div class="item">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_Quad_Chair_1x._SY116_CB667159060_.jpg"
+              alt="Chairs">
+            <p>Chairs</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">See more</a>
+      </div>
+      <!-- Shop for your home essentials -->
+      <div class="category-card">
+        <h2>Shop for your home essentials</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/CleaningTool_1x._SY116_CB563137408_.jpg"
+              alt="Cleaning Tools">
+            <p>Cleaning Tools</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeStorage_1x._SY116_CB563137408_.jpg"
+              alt="Home Storage">
+            <p>Home Storage</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/HomeDecor_1x._SY116_CB563137408_.jpg"
+              alt="Home Decor">
+            <p>Home Decor</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Sept/Bedding_1x._SY116_CB563137408_.jpg"
+              alt="Bedding">
+            <p>Bedding</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">See more</a>
+      </div>
+      <!-- Shop deals in Fashion -->
+      <div class="category-card">
+        <h2>Shop deals in Fashion</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_BOTTOMS_1x._SY116_CB624172947_.jpg"
+              alt="Jeans Under $50">
+            <p>Jeans Under $50</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_TOPS_1x._SY116_CB623353881_.jpg"
+              alt="Tops Under $25">
+            <p>Tops Under $25</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_DRESSES_1x._SY116_CB623353881_.jpg"
+              alt="Dress under $50">
+            <p>Dress under $50</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2022/SITE_FLIPS/SPR_22/GW/DQC/DQC_APR_TBYB_W_SHOES_1x._SY116_CB624172947_.jpg"
+              alt="Shoes Under $50">
+            <p>Shoes Under $50</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">See more</a>
+      </div>
+
+      <!-- New home arrivals under $50 -->
+      <div class="category-card">
+        <h2>New home arrivals under $50</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_315_HP_NewArrivals_QuadCard_D_01_1x._SY116_CB555960040_.jpg"
+              alt="Kitchen & dining">
+            <p>Kitchen & dining</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_316_HP_NewArrivals_QuadCard_D_02_1x._SY116_CB555960040_.jpg"
+              alt="Home Improvement">
+            <p>Home Improvement</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_317_HP_NewArrivals_QuadCard_D_03_1x._SY116_CB555960040_.jpg"
+              alt="Decor">
+            <p>Decor</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/DiscoTec/2024/HomeLifestyle/HomeSummerFlip/Homepage/QuadCards/Home_Flip_Summer_2024_318_HP_NewArrivals_QuadCard_D_04_1x._SY116_CB555960040_.jpg"
+              alt="Bedding & Bath">
+            <p>Bedding & Bath</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">See more</a>
+      </div>
+
+      <!-- Toys under $25 -->
+      <div class="category-card ">
+        <h2>Toys under $25</h2>
+        <div class="category-container full-size">
+          <div class="item">
+            <img class="full-size-img"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_1x_v3._SY304_CB573698005_.jpg"
+              alt="Toys under &25">
+          </div>
+        </div>
+        <a href="" class="see-more ">Shop Now</a>
+      </div>
+      <!-- New year, now you -->
+      <div class="category-card">
+        <h2>New year, now you</h2>
+        <div class="category-container full-size">
+          <div class="item">
+            <img class="full-size-img"
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2025/NYNY/Fuji_New_year_now_you_Dashboard_card_1X_EN._SY304_CB538057220_.jpg"
+              alt="New year, now You">
+          </div>
+        </div>
+        <a href="" class="see-more ">Shop Gaming</a>
+      </div>
+      <!-- Refresh Your Space-->
+      <div class="category-card">
+        <h2>Refresh Your Space</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_LP-HP_B08MYX5Q2W_01.23._SY116_CB619238939_.jpg"
+              alt="Dining">
+            <p>Dining</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_home_B08RCCP3HV_01.23._SY116_CB619238939_.jpg"
+              alt="Home">
+            <p>Home</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_kitchen_B0126LMDFK_01.23._SY116_CB619238939_.jpg"
+              alt="Kitchen">
+            <p>Kitchen</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/2023/Gateway/January/DesktopQuadCat_186x116_health-beauty_B07662GN57_01.23._SY116_CB619238939_.jpg"
+              alt="Health & Beauty">
+            <p>Health & Beauty</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">See more</a>
+      </div>
+      <!-- Fantastic Finds for Home -->
+      <div class="category-card d-small-block">
+        <h2>Fantastic Finds for Home</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Kitchen._SY116_CB558654384_.jpg"
+              alt="Kitchen">
+            <p>Kitchen</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Home_decor._SY116_CB558654384_.jpg"
+              alt="Home Decor">
+            <p>Home Decor</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Dining._SY116_CB558654384_.jpg"
+              alt="dining">
+            <p>Dining</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Smart_home._SY116_CB558654384_.jpg"
+              alt="Smart Home">
+            <p>Smart Home</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">See more</a>
+      </div>
+      <!-- Most Wished for in Video Games  -->
+      <div class="category-card full-width">
+        <h2>Most Wished for in Video Games</h2>
+        <div class="icons">
+          <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="single-category">
+          <img src="https://m.media-amazon.com/images/I/71wpE+ZIehL._AC_SY200_.jpg"
+            alt="Nintendo Switch™ with Neon Blue and Neon Red Joy‑Con™">
+          <img src="https://m.media-amazon.com/images/I/71W5GcQ8-JL._AC_SY200_.jpg" alt="Meta Quest 3S 128GB">
+          <img src="https://m.media-amazon.com/images/I/715w7purSbL._AC_SY200_.jpg"
+            alt="The Oregon Trail Nintendo Switch">
+          <img src="https://m.media-amazon.com/images/I/71Cgu-PiP6L._AC_SY200_.jpg" alt="Sonic X Shadow Generations">
+          <img class="landscape-img" src="https://m.media-amazon.com/images/I/61tWTfjqlOL._AC_SY200_.jpg"
+            alt="PlayStation Portal Remote Player 5">
+          <img src="https://m.media-amazon.com/images/I/81gTTc2IpCL._AC_SY200_.jpg"
+            alt="Super Smash Bros. Ultimate - US Version">
+          <img src="https://m.media-amazon.com/images/I/81LLoGOJ9RL._AC_SY200_.jpg"
+            alt="Sonic Superstars - Nintendo Switch">
+          <img src="https://m.media-amazon.com/images/I/41ECK5cY-2L._AC_SY200_.jpg" alt="PlayStation®5 console (slim)">
+        </div>
+      </div>
+      <!-- Top Picks In Pakistan  -->
+      <div class="category-card full-width">
+        <h2>Top Picks In Pakistan</h2>
+        <div class="icons">
+          <i class="fa-solid fa-chevron-left"></i>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="single-category">
+          <img src="https://m.media-amazon.com/images/I/61miFN7sKAL._AC_SY200_.jpg"
+            alt="DEWALT 20V MAX Cordless Drill and Impact Driver">
+          <img src="https://m.media-amazon.com/images/I/71Joo4OMaJL._AC_SY200_.jpg"
+            alt="EXCEBET Big and Tall Office Chair 400lbs Wide Seat,">
+          <img src="https://m.media-amazon.com/images/I/51RqdBa-uaL._AC_SY200_.jpg"
+            alt="Elkay EZWSSM EZH2O Surface Mount Bottle Filling Station">
+          <img src="https://m.media-amazon.com/images/I/61TVMGeqXGL._AC_SY200_.jpg" alt="UPPAbaby Vista V3 Stroller">
+          <img src="https://m.media-amazon.com/images/I/614zy21bM3L._AC_SY200_.jpg"
+            alt="Bounceland Party Castle Daydreamer Cloud Bounce House">
+          <img src="https://m.media-amazon.com/images/I/81az21Lp1uL._AC_SY200_.jpg" alt="DEWALT Screwdriver Bit Set">
+          <img src="https://m.media-amazon.com/images/I/61joErBxERL._AC_SY200_.jpg" alt="JBL Tune Flex ">
+        </div>
+      </div>
+      <!-- Most-loved travel essentials -->
+      <div class="category-card ">
+        <h2>Most-loved travel essentials</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Backpack_1x._SY116_CB566100767_.jpg"
+              alt="Backpacks">
+            <p>Backpacks</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/TravelBag_1x._SY116_CB566100767_.jpg"
+              alt="Suitcase">
+            <p>Suitcase</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Accessories_1x._SY116_CB566100767_.jpg"
+              alt="Accessories">
+            <p>Accessories</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/BAU2024Aug/Handbags_1x._SY116_CB566100767_.jpg"
+              alt="Handbags">
+            <p>Handbags</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">Discover more</a>
+      </div>
+      <!-- Level up your beauty routine -->
+      <div class="category-card ">
+        <h2>Level up your beauty routine</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Make-up._SY116_CB558654384_.jpg"
+              alt="MakeUp">
+            <p>MakeUp</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Make-up._SY116_CB558654384_.jpg"
+              alt="Brushes">
+            <p>Brushes</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Sponges._SY116_CB558654384_.jpg"
+              alt="Sponges">
+            <p>Sponges</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Mirrors._SY116_CB558654384_.jpg"
+              alt="Mirror">
+            <p>Mirror</p>
+          </div>
+          <a href="" class="see-more ">See more</a>
+        </div>
+      </div>
+      <!-- Have more fun with family -->
+      <div class="category-card">
+        <h2>Have more fun with family</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Playground_sets._SY116_CB558654384_.jpg"
+              alt="Outdoor Play Sets">
+            <p>Outdoor Play Sets</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_STEM_toys_or_learning_toys._SY116_CB558654384_.jpg"
+              alt="Learning Toys">
+            <p>Learning Toys</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Action_figure._SY116_CB558654384_.jpg"
+              alt="Action Figures">
+            <p>Action Figures</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Pretend_Play_Toys._SY116_CB558654384_.jpg"
+              alt="Pretend Play Toys">
+            <p>Pretend Play Toys</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">See more</a>
+      </div>
+      <!-- Fantastic Finds for Home -->
+      <div class="category-card d-small-none">
+        <h2>Fantastic Finds for Home</h2>
+        <div class="category-container">
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Kitchen._SY116_CB558654384_.jpg"
+              alt="Kitchen">
+            <p>Kitchen</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Home_decor._SY116_CB558654384_.jpg"
+              alt="Home Decor">
+            <p>Home Decor</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Dining._SY116_CB558654384_.jpg"
+              alt="dining">
+            <p>Dining</p>
+          </div>
+          <div class="item ">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/DskBTFQuadCards/Fuji_BTF_Quad_Cards_1x_Smart_home._SY116_CB558654384_.jpg"
+              alt="Smart Home">
+            <p>Smart Home</p>
+          </div>
+        </div>
+        <a href="" class="see-more ">See more</a>
+      </div>
+
+    </div>
+
+    <!-- Sign In -->
+
+    <div id="main-sign-in">
+      <div>
+        <h2>See personalized Recommendations</h2>
+        <a href="/SignIn/signIn.html">
+          <button> Sign in</button><br>
+
+        </a>
+        <small>New Customer? <a href="/SignUp/signup.html">Start here</a></small>
+
+      </div>
+    </div>
+
+    </div>
+
+  </main>
+
+  <!-- ************************* Footer ************************* -->
+  <footer>
+    <div id="footer-back-to-top">
+      Back to top
+    </div>
+
+    <div id="footer-nav">
+      <div class="footer-navigation">
+        <h3>Get to Know Us</h3>
+        <ul>
+          <li><a href="">Careers</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">About Amazon</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Amazon Devices</a></li>
+          <li><a href="">Amazon Science</a></li>
+        </ul>
+      </div>
+      <div class="footer-navigation">
+        <h3>Make Money with Us</h3>
+        <ul>
+          <li><a href="">Sell Products On Amazon</a></li>
+          <li><a href="">Sell on Amazon Bussiness</a></li>
+          <li><a href="">Sell apps on Amazon</a></li>
+          <li><a href="">Becomes an Affiliate</a></li>
+          <li><a href="">Advertise Your Products</a></li>
+          <li><a href="">Self-Publish with Us</a></li>
+          <li><a href="">Host an Amazon Hub</a></li>
+          <li><a href="">About Amazon</a></li>
+          <li><a href="">Investor Relations</a></li>
+          <li><a href="">Amazon Devices</a></li>
+          <li><a href="">Amazon Science</a></li>
+        </ul>
+      </div>
+      <div class="footer-navigation ">
+        <h3>Amazon Payment Products</h3>
+        <ul>
+          <li><a href="">Amazon Bussiness Cards</a></li>
+          <li><a href="">Shop with Points</a></li>
+          <li><a href="">Reload Your Balance</a></li>
+          <li><a href="">Amazon Currency Converter</a></li>
+        </ul>
+      </div>
+      <div class="footer-navigation ">
+        <h3>Let Us Help You</h3>
+        <ul>
+          <li><a href="">Amazon and COVID-19</a></li>
+          <li><a href="">Your Account</a></li>
+          <li><a href="">Your Orders</a></li>
+          <li><a href="">Shipping Rates and Policies</a></li>
+          <li><a href="">Manage Your Content and Devices</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="footer-logo">
+      <span class="footer-logoo ">
+        <img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Amazon Logo">
+      </span>
+      <div class="footer-container">
+        <div class="footer-container-items ">
+          <i class="fa-solid fa-globe"></i>
+          English
+        </div>
+        <div class="footer-container-items ">
+          <strong>$</strong>
+          USD-U.S Dollar
+        </div>
+        <div class="footer-container-items ">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="-0.5 -0.5 24 24"
+            id="Um-United-States-Minor-Outlying-Islands--Streamline-Flagpack" height="20" width="20">
+            <desc>UM United States Minor Outlying Islands Streamline Icon: https://streamlinehq.com</desc>
+            <path fill="#f7fcff" fill-rule="evenodd" d="M0 2.875h23v17.25H0V2.875Z" clip-rule="evenodd"
+              stroke-width="1"></path>
+            <path fill="#e31d1c" fill-rule="evenodd"
+              d="M0 13.4161875v1.4375h23v-1.4375H0Zm0 2.636375v1.4375h23v-1.4375H0Zm0 -7.90625v1.4375h23v-1.4375H0ZM0 18.6875v1.4375h23v-1.4375H0Zm0 -7.90625v1.4375h23v-1.4375H0ZM0 2.875v1.4375h23V2.875H0Zm0 2.63565625v1.4375h23v-1.4375H0Z"
+              clip-rule="evenodd" stroke-width="1"></path>
+            <path fill="#2e42a5" d="M0 2.875h14.375v9.34375H0z" stroke-width="1"></path>
+            <path fill="#f7fcff" fill-rule="evenodd"
+              d="m1.2376875 4.98740625 -0.5218125 0.36584375 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.875 0 -0.5218125 0.36584375 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.36584375 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625ZM0.715875 8.22896875l0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875H0.428375l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625ZM0.715875 11.10396875l0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875H0.428375l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 -5.3834375 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm0.5218125 2.5084375000000003 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-0.5218125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875ZM2.6751875 6.4241875l-0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-6.2718125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.2026875 0.531875h-0.60590625l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -0.3665625 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.60590625l0.2026875 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm2.3531875 0.3665625 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.20340624999999998 0.531875h-0.6051875l0.46359375 0.41184374999999995 -0.17609375 0.6511875Zm3.3968125 -3.2415624999999997 -0.5218125 0.3665625 0.17609375 -0.6511875 -0.46359375 -0.41256249999999994h0.6051875l0.20340624999999998 -0.53115625 0.23790625 0.531875h0.5160625l-0.405375 0.41184374999999995 0.1566875 0.6511875 -0.5045625 -0.3665625Zm-0.5218125 3.2415624999999997 0.5218125 -0.3665625 0.5045625 0.3665625 -0.1566875 -0.6511875 0.405375 -0.41256249999999994h-0.5160625l-0.23790625 -0.53115625 -0.20340624999999998 0.531875h-0.6051875l0.46359375 0.41184374999999995 -0.17609375 0.6511875Z"
+              clip-rule="evenodd" stroke-width="1"></path>
+          </svg>United States
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

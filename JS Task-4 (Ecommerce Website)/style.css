@@ -214,7 +214,7 @@ header {
 .nav-tools-cart-icon{
     position: relative;
 }
-.nav-tools-cart-icon #cart-counter{
+.nav-tools-cart-icon .cart-counter{
     position: absolute;
     top: -15%;
     left: 50%;
@@ -351,6 +351,7 @@ main #bg-image-new-year img {
 }
 
 .item img {
+    cursor: pointer;
     height: 97%;
     object-position: center;
     object-fit: cover;
