@@ -1,3 +1,4 @@
+
 @media (max-width:1023px) and (min-width:768px) {
     html {
         font-size: 15px;
@@ -21,7 +22,9 @@
 
     #main nav>i {
         display: flex;
+        
     }
+
 
     #main>nav #nav-links {
         display: none;
@@ -79,7 +82,9 @@
     #main main {
         padding: 15px 25px;
     }
-
+    #btn-first button{
+        font-size: 1rem;
+    }
     .project {
         min-width: none;
     }
@@ -90,4 +95,10 @@
     #main footer{
         padding: 20px 20px;
     }
+}
+@media (max-width:576px) {
+#btn-first button{
+    padding: 7px 12px;
+    font-size: .9rem;
+}
 }

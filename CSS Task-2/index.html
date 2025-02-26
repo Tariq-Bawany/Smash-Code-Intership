@@ -32,10 +32,23 @@
             <div id="nav-btn">
                 <button>Contact</button>
             </div>
-            <i class="ri-menu-line"></i>
-
+            <i class="ri-menu-line" id="navbar-expand"></i>
+            <div class="sidebar">
+                <a href="">
+                    <img src="https://www.smashcode.dev/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fsmash-code.appspot.com%2Fo%2Fothers%252Flogo.png%3Falt%3Dmedia%26token%3D03ad23b2-117d-405e-b75d-cf6ff119274f&w=128&q=100"
+                        alt="Smash Code Logo">
+                </a>
+                <div id="nav-links2">
+                    <a href="">HOME</a>
+                    <a href="">PROJECTS</a>
+                    <a href="">SERVICES</a>
+                    <a href="">BLOG</a>
+                    <a href="">ABOUT</a>
+                </div>
+            </div>
 
         </nav>
+
 
         <main>
             <div id="main-heading">
@@ -274,7 +287,9 @@
                         </div>
                     </div>
                     <h3>What people say about us</h3>
-                    <img height="150px" src="https://www.smashcode.dev/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fsmash-code.appspot.com%2Fo%2Fothers%252FgoogleReviews.jpg%3Falt%3Dmedia%26token%3Ddece678b-8cd0-488d-839a-5f9160edfe86&w=256&q=75" alt="Review on Google">
+                    <img height="150px"
+                        src="https://www.smashcode.dev/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fsmash-code.appspot.com%2Fo%2Fothers%252FgoogleReviews.jpg%3Falt%3Dmedia%26token%3Ddece678b-8cd0-488d-839a-5f9160edfe86&w=256&q=75"
+                        alt="Review on Google">
                 </div>
                 <div class="btm">
                     <h3><span>Social</span> -Links</h3>
@@ -295,6 +310,34 @@
         </footer>
         <p class="copyright">Copyright © 2024, All Right Reserved &nbsp; <span>Smash Code</span></p>
     </div>
+    <script>
+        let navbarExpandBtn = document.getElementById("navbar-expand");
+        let isExpand = false;
+        navbarExpandBtn.addEventListener("click", () => {
+            if (!isExpand) {
+                document.querySelector(".sidebar").style.display = "block"
+                document.querySelector(".sidebar").style.transform = "translateX(0%)"
+                navbarExpandBtn.classList.remove("ri-menu-line")
+                navbarExpandBtn.classList.add("ri-close-line")
+                isExpand = true
+            } else {
+                document.querySelector(".sidebar").style.display = "none"
+                document.querySelector(".sidebar").style.transform = "translateX(-100%)"
+                navbarExpandBtn.classList.remove("ri-close-line")
+                navbarExpandBtn.classList.add("ri-menu-line")
+                isExpand = false
+            }
+        })
+        window.addEventListener("resize",()=>{
+            if (window.innerWidth > 1023) {
+                document.querySelector(".sidebar").style.display = "none"
+                document.querySelector(".sidebar").style.left = "-10%"
+                navbarExpandBtn.classList.remove("ri-close-line")
+                navbarExpandBtn.classList.add("ri-menu-line")
+                isExpand = false
+            }
+        })
+    </script>
 </body>
 
 </html>
