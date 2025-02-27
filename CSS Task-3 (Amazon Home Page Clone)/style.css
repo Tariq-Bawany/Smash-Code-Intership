@@ -31,17 +31,31 @@ header {
     gap: 10px;
     /* justify-content: center; */
 }
-#nav-bar>i{
+
+#nav-bar>.small-buttons-icon {
+    height: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+#nav-bar>.small-buttons-icon>i {
     display: none;
+    align-items: center;
+    justify-content: center;
     height: 55px;
     font-size: 25px;
-    padding: 0 10px;
-    border: 1px solid #fff;
+    /* padding: 0 10px; */
+    /* border: 1px solid #fff; */
     transition: all ease .7s;
-    &:hover{
-        border-radius: 60%; 
-    }
 
+    &:hover {
+        /* border-radius: 60%;  */
+        transform: scale(1.05);
+    }
+}
+
+#nav-bar .mobile-search-btn {
+    display: none;
 }
 
 .nav-left {
@@ -49,9 +63,12 @@ header {
     align-items: center;
     padding-top: 10px;
 }
-.nav-left>div,.nav-toolbar>div,.nav-toolbar2>div{
+
+.nav-left>div,
+.nav-toolbar>div,
+.nav-toolbar2>div {
     height: 55px;
-    padding: 0 10px 10px 10px ;
+    padding: 0 10px 10px 10px;
     font-size: .8rem;
     display: flex;
     align-items: end;
@@ -60,25 +77,30 @@ header {
     border: 1px solid #131921;
     white-space: nowrap;
     transition: all ease .7s;
-    &:hover{
+
+    &:hover {
         border: 1px solid #fff;
         cursor: pointer;
     }
 }
+
 .nav-logo img {
     width: 85px;
     height: 35px;
     object-position: top;
 }
-.nav-search{
+
+.nav-search {
     display: flex;
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 8px;
 }
+
 .nav-search:focus-within {
     border: 3px solid #FF9900;
 }
+
 .nav-search input {
     width: 850px;
     padding-left: 10px;
@@ -92,7 +114,8 @@ header {
         font-weight: 500;
     }
 }
-.nav-search-btn{
+
+.nav-search-btn {
     color: #000;
     padding: 0 15px;
     font-size: .9rem;
@@ -101,6 +124,7 @@ header {
     align-items: center;
     justify-content: center;
 }
+
 .nav-search-btn:first-child {
     background-color: #D4D4D4;
 
@@ -108,6 +132,7 @@ header {
         cursor: pointer;
     }
 }
+
 .nav-search-btn:last-child {
     font-size: 1.2rem;
     background-color: #FEBD69;
@@ -117,14 +142,16 @@ header {
         cursor: pointer;
     }
 }
-.nav-search>div{
+
+.nav-search>div {
     height: 45px;
 }
-.nav-toolbar{
+
+.nav-toolbar {
     display: flex;
 }
 
-.nav-toolbar2{
+.nav-toolbar2 {
     display: none;
 }
 
@@ -147,7 +174,7 @@ header {
     border: 2px solid #232F3E;
     text-wrap: nowrap;
     padding: 0 10px;
-    border-radius: 3px ;
+    border-radius: 3px;
     transition: all ease .5s;
 
     &:hover {
@@ -155,16 +182,18 @@ header {
         cursor: pointer;
     }
 }
-.nav-links-categories i{
+
+.nav-links-categories i {
     font-size: 20px;
 }
 
 /* **************************** MAIN **************************** */
 /* bg image new year */
-#bg-image-new-year{
+#bg-image-new-year {
     display: flex;
     justify-content: center;
 }
+
 main {
     position: relative;
 }
@@ -206,6 +235,7 @@ main #bg-image-new-year img {
         cursor: pointer;
     }
 }
+
 .img-new-year-btns i:last-child {
     text-shadow: -4px 0 1px #fff;
 
@@ -289,10 +319,12 @@ main #bg-image-new-year img {
     display: grid;
     grid-template-columns: 1fr;
 }
-.d-small-block{
+
+.d-small-block {
     display: none;
 }
-.d-small-none{
+
+.d-small-none {
     display: block;
 }
 
@@ -349,16 +381,18 @@ main #bg-image-new-year img {
 }
 
 /* ========= Sing IN ========= */
-#main-sign-in{
+#main-sign-in {
     background-color: #fff;
     padding: 30px 0;
 }
+
 #main-sign-in>div {
     border-top: 1px solid #D4D4D4;
     padding: 20px 0 15px 0;
     text-align: center;
     border-bottom: 1px solid #D4D4D4;
 }
+
 #main-sign-in h2 {
     font-size: 21px;
     font-weight: 700;
@@ -388,15 +422,18 @@ main #bg-image-new-year img {
 #main-sign-in a {
     transition: all ease .7s;
     color: #034ba1;
+
     &:hover {
         color: #131921;
     }
 }
+
 /* ************************** Footer ************************** */
-footer{
+footer {
     color: #fff;
     padding-bottom: 30px;
 }
+
 footer #footer-back-to-top {
     text-align: center;
     padding: 15px 0;
@@ -412,21 +449,21 @@ footer #footer-back-to-top {
 }
 
 #footer-nav {
-    padding: 40px 200px 35px 200px;
+    padding: 40px 10vw;
     border-bottom: 1px solid #D4D4D4;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    /* justify-content: center; */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     row-gap: 40px;
     background-color: #232F3E;
     flex-wrap: wrap;
-    
+
 }
-.footer-navigation{
-    box-shadow: 0 0 1px #ffffff79;
-    padding: 20px;
-}
-.footer-navigation ul{
+
+
+
+.footer-navigation ul {
     list-style: none;
 }
 
@@ -439,6 +476,7 @@ footer #footer-back-to-top {
     text-decoration: none;
     color: #ffffffcc;
     font-size: 13px;
+
     &:hover {
         text-decoration: underline;
     }
@@ -453,9 +491,11 @@ footer #footer-back-to-top {
     width: 100%;
     background-color: #232F3E;
 }
-.footer-logoo{
+
+.footer-logoo {
     margin-top: 5px;
 }
+
 .footer-logoo img {
     height: 30px;
     width: 70px;
